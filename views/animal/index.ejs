@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reptiles 🐸</title>
-</head>
-<body>
-<h1>Repitle animals!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reptiles 🐸</title>
+  </head>
+  <body>
+    <h1>Reptile animals!</h1>
+    <ul>
+      <% animal.forEach(function(t){ %>
+      <li>
+        <%= t.reptiles %>
+        :
+        <%= t.fourLegs ? ' This reptile has fourLegs.' : 'This reptile does not have fourLegs.' %>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
 </html>
